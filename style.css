@@ -1,0 +1,39 @@
+body {
+  background-color: gainsboro;
+  /* Use a system font, if none are available use an available sans-sarif */
+  font-family: system-ui, sans-serif;
+  margin: 0;
+
+  /* added */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.command {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+#reset {
+  height: fit-content;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 64px;
+
+  /* added, because flex direction will now cause main axis be  */
+  align-content: center;
+}
