@@ -277,7 +277,7 @@ class GameController {
     this.view.updateBoard(this.model.getBoard(), this.model.getPlayerSymbols());
     this.view.updateMessage(msg);
     this.view.showBoardVisibility();
-    console.log("resetted");
+    // console.log("resetted");
   };
 }
 
